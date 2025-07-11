@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: hsl(330, 100%, 98%);
+      display: grid;
+      place-items: center;
+      font-family: "Outfit", sans-serif;
+      margin:0;
+      padding:5% 0%;
+
+    }
+
+    .card{
+      background: white;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width:50%;
+      padding:30px;
+      border-radius: 20px;
+    }
+
+    img{
+      border-radius: 20px;
+      width:100%;
+    }
+
+    h1{
+      font-family: "Young Serif", serif;
+      color:hsl(24, 5%, 18%);
+    }
+
+    .intro{
+      color:hsl(30, 10%, 34%);
+      font-weight: 500;
+      font-size: large;
+    }
+
+    .summarry{
+      background-color: hsl(330, 100%, 98%);
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+
+    h4{
+      font-weight: 800;
+      font-size: larger;
+      color: hsl(332, 51%, 32%);
+    }
+
+    .list-span{
+      color:hsl(24, 5%, 18%);
+      font-weight: 600;
+      font-size: large;
+    }
+    .list{
+      color:hsl(30, 10%, 34%);
+      font-weight: 500;
+      font-size: large;
+    }
+
+    section{
+      padding:20px;
+      border-bottom: 1px solid hsl(30, 18%, 87%)
+    }
+
+    h3{
+      color:hsl(14, 45%, 36%);
+      font-family: "Young Serif", serif;
+      font-size: x-large;
+    }
+
+    section ul li{
+      margin: 15px;
+      /* line-height: 20px; */
+    }
+    section ol li{
+      margin: 5px;
+      /* line-height: 20px; */
+    }
+
+    table {
+      width: 100%;
+    }
+
+    tr td{
+      border-bottom: 2px solid hsl(30, 54%, 90%);
+      padding: 10px;
+    }
+    .item{
+      color:hsl(30, 10%, 34%);
+      font-weight: 500;
+      font-size: large;
+    }
+
+    .value{
+      font-weight: 600;
+      font-size: large;
+      color: hsl(332, 51%, 32%);
+    }
+
+    #table-section{
+      border:none;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <img src="./assets/images/image-omelette.jpeg" alt="dish" />
+    <div>
+      <h1>Simple Omelette Recipe</h1>
+      <p class="intro">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+    </div>  
+    <div class="summarry">
+       <h4>Preparation time</h4> 
+       <ul type="disc">
+        <li class="list" > <span class="list-span">Total</span>: Approximately 10 minutes</li>
+        <li class="list"><span class="list-span">Preparation</span>: 5 minutes</li>
+        <li class="list"><span class="list-span">Cooking</span>: 5 minutes</li>
+       </ul>
+    </div>
+
+    <section class="ingredients">
+      <h3>Ingredients</h3>
+      <ul>
+        <li class="list">  2-3 large eggs</li>
+        <li class="list">  Salt, to taste</li>
+        <li class="list">  Pepper, to taste</li>
+        <li class="list">  1 tablespoon of butter or oil</li>
+        <li class="list">  Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </section>
+
+    <section class="ingredients">
+      <h3>Instructions</h3>
+      <ol type="1">
+        <li class="list"><span class="list-span">Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li class="list"><span class="list-span">Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li class="list"><span class="list-span">Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.</li>
+        <li class="list"><span class="list-span">Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li class="list"><span class="list-span">Fold and serve</span>:As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li class="list"><span class="list-span">Enjoy</span>:Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </section>
+
+    <section id="table-section">
+      <h3>Nutrition</h3>
+      <p class="intro">  The table below shows nutritional values per serving without the additional fillings.</p>
+    
+      <table>
+        <tr><td class="item">Calories</td> <td class="value">277kcal</td></tr>
+        <tr><td class="item">Carbs</td> <td class="value">0g</td></tr>
+        <tr><td class="item">Protein</td> <td class="value">20g</td></tr>
+        <tr><td class="item">Fat</td> <td class="value">22g</td></tr>
+        
+      </table>
+    </section>
+  </main>
+</body>
+</html>
